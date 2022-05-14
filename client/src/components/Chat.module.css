@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+.video{
+    height: 40vh;
+    width: 100vw;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40vh;
+    width: 100vw;
+}
+
+.chat{
+    height: 60vh;
+    width: 100%;
+}
+
+.messageHistory{
+    border: solid 1px black;
+    height: 51vh;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.userMessage{
+    font-weight: bolder;
+}
+
+.sendMessage{
+    height: 9vh;
+}
+
+.form{
+    display: flex;
+}
+
+.textarea{
+    width: 80vw;
+    height: 9vh;
+    resize: none;
+}
+
+.enviar{
+    width: 20vw;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cerrarSesion{
+    position: absolute;
+    top: 41vh;
+    right: 1vh;
+    background-color: crimson;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 769px){
+    .container{
+        display: flex;
+    }
+    .video{
+        height: 100vh;
+        width: 65vw;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 65vw;
+    }
+    
+    .chat{
+        height: 100vh;
+        width: 35vw;
+    }       
+
+    .messageHistory{
+        border: solid 1px black;
+        height: 90vh;
+        padding: 10px;
+    }
+    
+    .sendMessage{
+        height: 10vh;
+    }
+
+    .textarea{
+        width: 80vw;
+        height: 10vh;
+    }
+
+    .cerrarSesion{
+        position: absolute;
+        top: 1vh;
+        right: 2vw;
+        background-color: crimson;
+        outline: none;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+    }
+}
